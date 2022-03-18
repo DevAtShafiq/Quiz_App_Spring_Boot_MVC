@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/quiz.css}">
+
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="question-form">
+                <h1  class="text-warning mt-2">Going Back is Prohibited</h1>
+                <form th:action="@{/submit}" th:object="${questionForm}" method="post">
+
+                    <div class="question-box" th:each="q, iteration_index:${questionForm.questions}">
+
+                        <p class="text-light" th:text="${q.title}"></p>
+
+                        <div class="option">
+                            <input type="radio" th:name="|questions.${iteration_index.index}.chose|" th:value="1">
+                            <p class="text-light " th:text="${q.optionA}"></p>
+                        </div>
+
+
+                        <div class="option ">
+                            <input type="radio" th:name="|questions.${iteration_index.index}.chose|" th:value="2">
+                            <p class="text-light " th:text="${q.optionB}"></p>
+                        </div>
+
+
+                        <div class="option">
+                            <input type="radio" th:name="|questions.${iteration_index.index}.chose|" th:value="3">
+                            <p class="text-light" th:text="${q.optionC}"></p>
+                        </div>
+
+
+                        <input type="hidden" th:name="|questions.${iteration_index.index}.questionId|" th:value="${q.questionId}">
+                        <input type="hidden" th:name="|questions.${iteration_index.index}.title|" th:value="${q.title}">
+                        <input type="hidden" th:name="|questions.${iteration_index.index}.ans|" th:value="${q.ans}">
+
+
+                        <br>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-warning mb-3 px-5">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+[
+	{
+		"questionId": 1,
+		"title": "oriented programming language, is ",
+		"optionA": "C++",
+		"optionB": "python",
+		"optionC": "Both (a)",
+		"ans": 3,
+		"choose": -1
+	},
+	{
+		"questionId": 2,
+		"title": "The methods wait ( ) and notify ( ) are defined in",
+		"optionA": "java.lang.object",
+		"optionB": "java.lang.thread",
+		"optionC": "java.lang.string",
+		"ans": 1,
+		"choose": -1
+	},
+	{
+		"questionId": 3,
+		"title": "When the thread is ready for execution and waiting for the availability of the processor, it is said to be",
+		"optionA": "dead state",
+		"optionB": " running state",
+		"optionC": "in runable state",
+		"ans": 3,
+		"choose": -1
+	},
+	{
+		"questionId": 4,
+		"title": "Java declaration statement must end with",
+		"optionA": "a semicolon",
+		"optionB": "full stop",
+		"optionC": "comma",
+		"ans": 1,
+		"choose": -1
+	},
+	{
+		"questionId": 5,
+		"title": "Which one of the following is not a java keyword?",
+		"optionA": "static",
+		"optionB": "break",
+		"optionC": "study",
+		"ans": 3,
+		"choose": -1
+	},
+	{
+		"questionId": 6,
+		"title": "Java,",
+		"optionA": "is most suitable for Internet programming",
+		"optionB": "non an acronym",
+		"optionC": "(a) and (b)",
+		"ans": 3,
+		"choose": -1
+	},
+	{
+		"questionId": 7,
+		"title": "Which one of the following is a logical operator?",
+		"optionA": "||",
+		"optionB": "&&",
+		"optionC": "(a) and (b)",
+		"ans": 3,
+		"choose": -1
+	},
+	{
+		"questionId": 8,
+		"title": "The method which belongs to the string class is/are",
+		"optionA": "Length ",
+		"optionB": "Substring ",
+		"optionC": "Equals ",
+		"ans": 1,
+		"choose": -1
+	},
+	{
+		"questionId": 9,
+		"title": "For a 32-bit integer value, keyword used is",
+		"optionA": "Boolean",
+		"optionB": "Int",
+		"optionC": "Long",
+		"ans": 2,
+		"choose": -1
+	},
+	{
+		"questionId": 10,
+		"title": "A web page is",
+		"optionA": "Made up of text and HTML tags",
+		"optionB": "Marked by a closing HTML tag",
+		"optionC": "(a) and (b)",
+		"ans": 3,
+		"choose": -1
+	}
+]

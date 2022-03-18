@@ -1,0 +1,22 @@
+body{
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+}
+
+.container form{
+    margin-top: 2rem;
+}
+.container form .option{
+
+    display: flex;
+    flex-direction: row;
+}
+.container form .option input{
+
+    margin-top: 8px;
+}
+.container form .option p{
+
+    margin-left: 10px;
+}
